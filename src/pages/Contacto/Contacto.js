@@ -1,8 +1,10 @@
+import Formulario from "../../components/Formu/formulario"
+
 const Contacto = () => {
     return (
         <div>
-            <h1> Contacto </h1>
-
+          <Formulario />  
+            
         </div>
     );
 };

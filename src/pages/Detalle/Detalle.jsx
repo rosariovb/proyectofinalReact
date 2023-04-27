@@ -36,8 +36,8 @@ const Detalle = () => {
     return(
         <div>
             <h1>detalles</h1>
-            {catalogo.map((data) => {
-                return <CardProdu catalogo={data} key={data.id} />;
+            {catalogo.map((producto) => {
+                return <CardProdu data={producto} key={producto.id} />;
             })}
         </div>
 

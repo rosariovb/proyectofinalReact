@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import CardProdu from "../CardProdu/CardProdu";
 import "./CardList.css";
+
 import { Link } from "react-router-dom";
 //FIREBASE
 import { db } from "../../firebase/firebaseConfig";
@@ -29,7 +30,7 @@ const CardList = () => {
                 return (
                     <div key={data.id}>
                         <Link to={`/detail/${data.id}`}>
-                            <CardProdu catalogosData={data} />
+                            <CardProdu data={data} />
                         </Link>
                     </div>
                 );

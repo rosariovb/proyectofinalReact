@@ -1,5 +1,5 @@
 import "./App.css";
-
+// react -router- dom
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //componentes
@@ -14,22 +14,32 @@ import Productos from "./pages/Productos/Productos";
 import Detalle from "./pages/Detalle/Detalle";
 import Glitters from "./pages/Glitters/Glitters";
 
+//context
+import CartProvider from "./Context/CartContext";
+
+
 
 const App = () => {
   return (
     <Router>
+
       <div className="app">
         <Header />
-        <NavBar />
-        <h1> Probando firebase </h1>
-        <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/productos" element={<Productos />} />
-          <Route path="/glittes" element={<Glitters />} />
-          <Route path="/Contacto" element={<Contacto />} />
-          <Route path="/detail/:id" element={<Detalle />} />
-        </Routes>
+
+
+        <CartProvider >
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Inicio />} />
+            <Route path="/productos" element={<Productos />} />
+            <Route path="/glittes" element={<Glitters />} />
+            <Route path="/categoria/:color" element={<Glitters />} />
+            <Route path="/Contacto" element={<Contacto />} />
+            <Route path="/detail/:id" element={<Detalle />} />
+          </Routes>
+        </CartProvider>
       </div>
+
     </Router>
   );
 

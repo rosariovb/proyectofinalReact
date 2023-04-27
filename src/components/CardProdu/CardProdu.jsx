@@ -12,18 +12,18 @@ const CardProdu = ({data} ) => {
       <CardMedia component="img" height="160" image= {data.img} alt="brillo"/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {data.Nombre}   
+            {data.nombre}   
           </Typography>
           <Typography variant="body2" color="text.secondary">
-          {data.Descripcion} 
+          {data.descripcion} | {data.color}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            $ {data.Precio}
+            $ {data.precio}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+      <Button size="small" color="primary">
           Añadir al carrito
         </Button>
       </CardActions>
