@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+/*import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useCartContext } from "../../context/CartContext";
+import { useCartContext } from "../../Context/CartContext";
 import ItemCount from "../Count";
 
 
@@ -16,9 +16,9 @@ export const ItemDetail = ({ data }) => {
 	return (
 		<div className="container">
 			<div className="detail">
-				<img className="detail__image" src={data.image} alt="" />
+				<img className="detail__image" src={data.} alt="" />
 				<div className="content">
-					<h1>{data.title}</h1>
+					<h1>{data.}</h1>
 					{goToCart ? (
 						<Link to="/cart"> Terminar al carrito</Link>
 					) : (
@@ -29,4 +29,4 @@ export const ItemDetail = ({ data }) => {
 		</div>
 	);
 };
-export default ItemDetail;
+export default ItemDetail;*/

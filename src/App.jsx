@@ -15,7 +15,7 @@ import Detalle from "./pages/Detalle/Detalle";
 import Glitters from "./pages/Glitters/Glitters";
 
 //context
-import CartProvider from "./Context/CartContext";
+/*import CartProvider from "./Context/CartContext";*/
 
 
 
@@ -27,7 +27,7 @@ const App = () => {
         <Header />
 
 
-        <CartProvider >
+        
           <NavBar />
           <Routes>
             <Route path="/" element={<Inicio />} />
@@ -37,7 +37,7 @@ const App = () => {
             <Route path="/Contacto" element={<Contacto />} />
             <Route path="/detail/:id" element={<Detalle />} />
           </Routes>
-        </CartProvider>
+        
       </div>
 
     </Router>

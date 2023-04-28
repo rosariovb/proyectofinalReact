@@ -1,8 +1,9 @@
-import React,{useState} from 'react';
+/*import React,{useState} from 'react';
 export const CartContext = React.createContext([]);
 
 const CartProvider = ({children}) => {
 	const [ cart, setCart] = useState([]);
+
 	const agregarCart = (item,quantity) =>{
 		if (estadoCart(item.id)) {
 			setCart(
@@ -45,4 +46,4 @@ const CartProvider = ({children}) => {
 	)
 }
 
-export default CartProvider;
+export default CartProvider;*/
